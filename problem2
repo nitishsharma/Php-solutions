@@ -1,0 +1,22 @@
+problem 2
+<?php
+
+function fib($n)
+  {if($n-2>0)
+    {return fib($n-1)+fib($n-2)
+    }
+  else
+  return 1;
+    }
+
+ $n=3;
+ $s=0;
+while(fib($n)<4000000)
+  {
+   $s+=fib($n);
+   $n=$n+3;}
+  echo $s
+
+
+?>
+
